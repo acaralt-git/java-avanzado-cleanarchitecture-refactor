@@ -4,16 +4,6 @@ import java.time.LocalDateTime;
 
 public class Appointment {
 
-	public Appointment() {
-	}
-
-	public Appointment(Long id, Long petId, LocalDateTime date, String reason) {
-		this.id = id;
-		this.petId = petId;
-		this.date = date;
-		this.reason = reason;
-	}
-
 	private Long id;
 	private Long petId;
 	private LocalDateTime date;
@@ -53,6 +43,16 @@ public class Appointment {
 
 	public boolean isValidForAppointment() {
 		return petId != null && date != null;
+	}
+
+	public Appointment() {
+	}
+
+	public Appointment(Long id, Long petId, LocalDateTime date, String reason) {
+		this.id = id;
+		this.petId = petId;
+		this.date = date;
+		this.reason = reason;
 	}
 
 	public void validateForCreation() {

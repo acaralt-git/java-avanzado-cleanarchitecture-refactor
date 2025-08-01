@@ -2,16 +2,6 @@ package dev.arol.petclinic.domain.model;
 
 public class Pet {
 
-	public Pet() {
-	}
-
-	public Pet(Long id, String name, String species, String ownerName) {
-		this.id = id;
-		this.name = name;
-		this.species = species;
-		this.ownerName = ownerName;
-	}
-
 	private Long id;
 	private String name;
 	private String species;
@@ -46,6 +36,16 @@ public class Pet {
 	}
 
 	public void setOwnerName(String ownerName) {
+		this.ownerName = ownerName;
+	}
+
+	public Pet() {
+	}
+
+	public Pet(Long id, String name, String species, String ownerName) {
+		this.id = id;
+		this.name = name;
+		this.species = species;
 		this.ownerName = ownerName;
 	}
 
